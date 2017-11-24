@@ -1,0 +1,79 @@
+/*
+ * CSS for turning a <ul> in a <nav> 
+ * 
+ */
+
+nav {
+	display: block;
+	background-color: var(--main-bg-color);
+
+}
+
+/* could this be manipulated to indicate a submenu? */
+nav > ul, 
+nav > ul ul {
+	list-style: none;
+
+}
+
+/*all first level links and the username placeholder */
+nav > ul a, 
+nav > ul span {
+	display: block;
+	width: 10em;
+	
+	text-decoration: none;
+	
+	padding: 0.5em 1em;
+	
+	color: var(--main-fg-color);
+	background-color: var(--main-bg-color);
+	
+	border: 1px solid var(--main-bg-color);
+	
+}
+
+nav > ul a:hover, 
+nav > ul span:hover {
+	color: var(--main-bg-color);
+	background-color: var(--main-fg-color);
+	
+}
+
+nav > ul li {
+	float: left;
+	width: 10em;	/* menu item width */
+	
+}
+
+/* push last first-level list item to the right */
+nav > ul > li:last-of-type {
+	float: right;
+	
+	margin-right: 2em;
+
+}
+
+/* align content of last first-level item to the right */
+nav > ul > li:last-of-type, 
+nav > ul > li:last-of-type span {
+	text-align: right;
+	
+}
+
+/* second level list, defaults to hidden (left: -999))*/
+nav > ul li ul {
+	position: absolute;
+	width: 10em;
+	
+	left: -999em;
+
+}
+
+/* show sub lists (if any) when one hovers */
+nav > ul li:hover ul {
+	left: auto;
+
+	box-shadow: 0.1em 0.1em 0.5em #cccccc;
+
+}

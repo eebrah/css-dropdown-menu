@@ -1,0 +1,43 @@
+:root {
+  --main-bg-color: navy;
+  --main-fg-color: white;
+  --main-text-color: black;
+  
+  --main-alternate-color: #DDDDDD;
+  --main-highlight-color: #FFCFB7;
+  
+}
+
+* {
+	padding: 0;
+	margin: 0;
+
+}
+
+body {
+	font-family: sans-serif;
+
+}
+
+.hidden {
+    display: none;
+
+}
+
+div.wrapper {
+	margin: 0;
+
+}
+
+.clear { 
+	clear: both; 
+}
+
+
+div.body {
+	clear: left;
+	
+	padding: 1em;
+
+}
+

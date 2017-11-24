@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head lang="html">
+        <title>Pure CSS drop-down menu</title>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, minimal-ui;">
+        <meta charset="utf-8;">
+        <link rel="stylesheet"
+              href="styles/main.css">
+        <link rel="stylesheet"
+			  href="styles/nav.dropdown.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+				<nav>
+					<ul class="nav" 
+                        id="nav">
+						<li> <!-- home link -->
+							<a href="/">home</a>
+						</li> 
+						<li> <!-- fuel links -->
+							<a href="#">section 1</a>
+							<ul>
+								<li>
+								    <a href="#">section 1.1</a>
+							    </li>
+							</ul>
+						</li>
+						<li> <!-- garage links -->
+							<a href="#">section 2</a>
+							<ul>
+								<li>
+								    <a href="#">section 2.1</a>
+							    </li>
+								<li>
+								    <a href="#">section 2.2</a>
+							    </li>
+							</ul>
+						</li>
+						<li> <!-- profile & access links -->
+							<span>username</span>
+							<ul>
+								<li>
+									<a href="#">log out</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>	
+			</div>
+        </div>
+        <script src="scripts/main.js">
+        </script>
+    </body>
+</html>
+
